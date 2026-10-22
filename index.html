@@ -1379,6 +1379,34 @@
     .preview-col .block-title{min-height:0;}
     .preview-col .pdf-frame,.preview-col .pdf-frame.is-folder{height:380px;}
   }
+
+  /* ===== FIX: tampilan "situs desktop" di HP (viewport ~980px, tinggi layar besar) ===== */
+  /* 1. Hero jangan setinggi layar HP; batasi supaya tidak kosong melompong */
+  #beranda.hero{
+    min-height:min(calc(100svh - var(--navh) - 2*var(--pad)), 640px);
+  }
+  .hero-stage{
+    gap:clamp(32px,5vh,64px);
+    padding-top:clamp(40px,6vh,72px);
+    padding-bottom:clamp(48px,7vh,80px);
+  }
+  /* 2. Menu atas: tidak ada item terpotong di kiri, tetap bisa digeser */
+  .dock{justify-content:flex-start;}
+  .dock button:first-child{margin-left:auto;}
+  @media (min-width:901px) and (max-width:1100px){
+    .dock button{padding:0 14px;font-size:.84rem;}
+    .brand-cell{padding:0 16px;}
+  }
+  /* 3. Kartu profil: susun vertikal sampai 1100px agar folder NIM/Prodi/Universitas lega */
+  @media (min-width:821px) and (max-width:1100px){
+    .profile-top{flex-direction:column;align-items:stretch;text-align:center;}
+    .profile-main{flex-direction:column;justify-content:center;}
+    .profile-divider{width:100%;height:1px;align-self:auto;}
+    .profile-meta{text-align:center;grid-template-columns:repeat(3,minmax(0,1fr));}
+    .meta-item{align-items:center;text-align:center;}
+    .profile-about p{text-align:left;}
+  }
+  .meta-value{overflow-wrap:normal;word-break:normal;font-size:clamp(.86rem,1.5vw,1rem);}
 </style>
 </head>
 <body>
