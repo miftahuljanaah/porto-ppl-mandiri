@@ -1776,7 +1776,7 @@
           transform: translateY(0);
         }
       }
-      .kb-row-2 {
+      .kb-row-1 {
         margin-left: calc(var(--k) * 0.5);
       }
 
@@ -2356,6 +2356,9 @@
       .page.is-detail .detail {
         display: block;
       }
+      .siklus-title {
+        margin: 6px 0 4px;
+      }
       .page.is-detail .section-heading,
       .page.is-detail .course-grid {
         display: none;
@@ -2694,6 +2697,48 @@
         background: var(--ink);
         color: #fff;
       }
+      .siklus-list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+      .siklus-card {
+        padding: clamp(18px, 3vw, 32px);
+        background: var(--grey);
+        border: 2px solid var(--ink);
+        border-radius: 28px;
+        box-shadow: 6px 6px 0 var(--ink);
+        scroll-margin-top: 24px;
+      }
+      .siklus-head {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 8px;
+      }
+      .siklus-num {
+        width: 56px;
+        height: 56px;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--ink);
+        border-radius: 16px;
+        background: var(--ic, var(--accent));
+        box-shadow: 3px 3px 0 var(--ink);
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+      .siklus-card .siklus-title {
+        margin: 0;
+      }
+      .siklus-card .preview-col {
+        background: #fff;
+        border-radius: 18px;
+        padding: 16px;
+      }
       .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
@@ -2770,8 +2815,8 @@
         <button data-target="profil">Profil</button>
         <button data-target="mengajar">Praktik Mengajar</button>
         <button data-target="nonmengajar">Nonmengajar</button>
-        <button data-target="refleksi">Refleksi &amp; Evaluasi</button>
         <button data-target="dokumentasi">Dokumentasi</button>
+        <button data-target="refleksi">Refleksi &amp; Evaluasi</button>
       </nav>
     </header>
 
@@ -2793,31 +2838,31 @@
       <!-- BERANDA -->
       <section id="beranda" class="page hero">
         <div class="hero-stage">
-          <h1 class="sr-only">Portofolio</h1>
+          <h1 class="sr-only">Porto Miftah</h1>
           <div class="kb" aria-hidden="true">
             <div class="kb-rows">
-              <div class="kb-row">
-                <span class="key" data-k="P" style="--c: #ff7a00; --i: 0"
+              <div class="kb-row kb-row-1">
+                <span class="key" data-k="P" style="--c: #38d385; --i: 0"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
                   ><span class="top"><b>P</b></span></span
-                ><span class="key" data-k="O" style="--c: #b9a8ff; --i: 1"
+                ><span class="key" data-k="O" style="--c: #ff8fb1; --i: 1"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
                   ><span class="top"><b>O</b></span></span
-                ><span class="key" data-k="R" style="--c: #38d385; --i: 2"
+                ><span class="key" data-k="R" style="--c: #3fa0ff; --i: 2"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
                   ><span class="top"><b>R</b></span></span
-                ><span class="key" data-k="T" style="--c: #3fa0ff; --i: 3"
+                ><span class="key" data-k="T" style="--c: #ffd530; --i: 3"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
                   ><span class="top"><b>T</b></span></span
-                ><span class="key" data-k="O" style="--c: #ffd530; --i: 4"
+                ><span class="key" data-k="O" style="--c: #b9a8ff; --i: 4"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
@@ -2825,38 +2870,43 @@
                 >
               </div>
               <div class="kb-row kb-row-2">
-                <span class="key" data-k="F" style="--c: #ff8fb1; --i: 5"
+                <span class="key" data-k="M" style="--c: #ffd530; --i: 5"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
-                  ><span class="top"><b>F</b></span></span
-                ><span class="key" data-k="O" style="--c: #ff7a00; --i: 6"
-                  ><span class="bev"
-                    ><i class="bt"></i><i class="br"></i><i class="bb"></i
-                    ><i class="bl"></i></span
-                  ><span class="top"><b>O</b></span></span
-                ><span class="key" data-k="L" style="--c: #b9a8ff; --i: 7"
-                  ><span class="bev"
-                    ><i class="bt"></i><i class="br"></i><i class="bb"></i
-                    ><i class="bl"></i></span
-                  ><span class="top"><b>L</b></span></span
-                ><span class="key" data-k="I" style="--c: #38d385; --i: 8"
+                  ><span class="top"><b>M</b></span></span
+                ><span class="key" data-k="I" style="--c: #38d385; --i: 6"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
                   ><span class="top"><b>I</b></span></span
-                ><span class="key" data-k="O" style="--c: #3fa0ff; --i: 9"
+                ><span class="key" data-k="F" style="--c: #ff7a00; --i: 7"
                   ><span class="bev"
                     ><i class="bt"></i><i class="br"></i><i class="bb"></i
                     ><i class="bl"></i></span
-                  ><span class="top"><b>O</b></span></span
+                  ><span class="top"><b>F</b></span></span
+                ><span class="key" data-k="T" style="--c: #ff8fb1; --i: 8"
+                  ><span class="bev"
+                    ><i class="bt"></i><i class="br"></i><i class="bb"></i
+                    ><i class="bl"></i></span
+                  ><span class="top"><b>T</b></span></span
+                ><span class="key" data-k="A" style="--c: #b9a8ff; --i: 9"
+                  ><span class="bev"
+                    ><i class="bt"></i><i class="br"></i><i class="bb"></i
+                    ><i class="bl"></i></span
+                  ><span class="top"><b>A</b></span></span
+                ><span class="key" data-k="H" style="--c: #3fa0ff; --i: 10"
+                  ><span class="bev"
+                    ><i class="bt"></i><i class="br"></i><i class="bb"></i
+                    ><i class="bl"></i></span
+                  ><span class="top"><b>H</b></span></span
                 >
               </div>
             </div>
             <span
               class="key key-enter"
               data-k="ENTER"
-              style="--c: #ff8fb1; --i: 10"
+              style="--c: #ff7a00; --i: 11"
               ><svg viewBox="0 0 150 205" aria-hidden="true">
                 <path
                   class="e-base"
@@ -2996,12 +3046,11 @@
           <h2>Praktik Mengajar Mandiri</h2>
           <p>
             Empat siklus praktik mengajar di SMK Negeri 2 Depok. Pilih siklus
-            untuk melihat perencanaan, analisis materi dan media, video praktik,
-            instrumen penilaian, serta refleksi.
+            untuk melihat RPM, media pembelajaran, bahan ajar, hasil belajar
+            murid, video pembelajaran, dan refleksi.
           </p>
         </div>
-        <div class="course-grid" id="grid-mengajar"></div>
-        <div class="detail" aria-live="polite"></div>
+        <div class="siklus-inline" id="siklus-inline" aria-live="polite"></div>
       </section>
 
       <!-- KEGIATAN NONMENGAJAR -->
@@ -3017,6 +3066,15 @@
         <div class="detail" aria-live="polite"></div>
       </section>
 
+      <!-- DOKUMENTASI -->
+      <section id="dokumentasi" class="page">
+        <div class="section-heading reveal">
+          <h2>Dokumentasi</h2>
+          <p>Kumpulan foto dan dokumentasi kegiatan selama PPL.</p>
+        </div>
+        <div class="gallery" id="galeri"></div>
+      </section>
+
       <!-- REFLEKSI DAN EVALUASI AKHIR -->
       <section id="refleksi" class="page">
         <div class="section-heading reveal">
@@ -3027,15 +3085,6 @@
           </p>
         </div>
         <div class="refleksi-wrap" id="refl-root"></div>
-      </section>
-
-      <!-- DOKUMENTASI -->
-      <section id="dokumentasi" class="page">
-        <div class="section-heading reveal">
-          <h2>Dokumentasi</h2>
-          <p>Kumpulan foto dan dokumentasi kegiatan selama PPL.</p>
-        </div>
-        <div class="gallery" id="galeri"></div>
       </section>
     </main>
 
@@ -3064,8 +3113,8 @@
             <button data-target="profil">Profil</button>
             <button data-target="mengajar">Praktik Mengajar</button>
             <button data-target="nonmengajar">Nonmengajar</button>
-            <button data-target="refleksi">Refleksi &amp; Evaluasi</button>
             <button data-target="dokumentasi">Dokumentasi</button>
+            <button data-target="refleksi">Refleksi &amp; Evaluasi</button>
           </div>
         </div>
         <div class="footer-col">
@@ -3144,27 +3193,12 @@
       // Tempel tautan Google Drive (file atau folder, "Anyone with the link") pada tanda kutip kosong.
       // Teks yang dikosongkan akan tampil sebagai "Belum diisi".
       const itemDefs = [
-        [
-          "perencanaan",
-          "Perencanaan",
-          "Modul ajar dan rancangan pembelajaran.",
-        ],
-        [
-          "materi",
-          "Analisis Materi",
-          "Analisis tujuan, cakupan, dan keluasan materi.",
-        ],
-        [
-          "media",
-          "Analisis Media",
-          "Pemilihan dan analisis media pembelajaran.",
-        ],
-        ["video", "Video Praktik", "Rekaman pelaksanaan praktik mengajar."],
-        [
-          "instrumen",
-          "Instrumen Penilaian",
-          "Instrumen asesmen dan rubrik penilaian.",
-        ],
+        ["rpm", "RPM", "Rencana Pembelajaran Mendalam."],
+        ["media", "Media Pembelajaran", "Media yang digunakan dalam pembelajaran."],
+        ["bahan", "Bahan Ajar", "Bahan ajar yang dipakai murid."],
+        ["lkm", "LKM", "Lembar Kerja Murid."],
+        ["hasil", "Hasil Belajar Murid", "Capaian dan hasil belajar murid."],
+        ["video", "Video Pembelajaran", "Rekaman pelaksanaan pembelajaran."],
         ["refleksi", "Refleksi", "Refleksi pelaksanaan dan rencana perbaikan."],
       ];
       const mengajar = [
@@ -3173,12 +3207,14 @@
           title: "Siklus 1",
           topik: "",
           links: {
-            perencanaan: "",
-            materi: "",
-            media: "",
-            video: "",
-            instrumen: "",
-            refleksi: "",
+            rpm: "",
+            media: "https://drive.google.com/file/d/1WRYJKZBfijLSsHYlatge0qxz2HvEONj_/view?usp=drive_link",
+            bahan: "",
+            lkm: "https://drive.google.com/file/d/1HfEdOtFaUbMkXSlSQ8xlJ3XfDobCo1xE/view?usp=drive_link",
+            hasil: "",
+            video: "https://youtu.be/H9wZeKcUGEI",
+            refleksi:
+              "https://drive.google.com/file/d/1fU85yiMvwVL-yxvwE2-CrBGwH7xWfJj5/view?usp=drive_link",
           },
           teks: {},
         },
@@ -3187,12 +3223,14 @@
           title: "Siklus 2",
           topik: "",
           links: {
-            perencanaan: "",
-            materi: "",
-            media: "",
-            video: "",
-            instrumen: "",
-            refleksi: "",
+            rpm: "",
+            media: "https://drive.google.com/file/d/1dG_LVRdGRgMBm9Y14qXpKbLlif-poj-_/view?usp=drive_link",
+            bahan: "",
+            lkm: "https://drive.google.com/file/d/1rm5HAR9Et-pR9_syyFjFlC51c23dpiIr/view?usp=drive_link",
+            hasil: "",
+            video: "https://youtu.be/UtkfOPKW95s",
+            refleksi:
+              "https://drive.google.com/file/d/1g1oTxaKxZkWQo518Ae0IESxJ4WcU0hHB/view?usp=drive_link",
           },
           teks: {},
         },
@@ -3201,12 +3239,14 @@
           title: "Siklus 3",
           topik: "",
           links: {
-            perencanaan: "",
-            materi: "",
-            media: "",
-            video: "",
-            instrumen: "",
-            refleksi: "",
+            rpm: "",
+            media: "https://drive.google.com/file/d/1N81U_WfDY5y0ZT1Bx4Wq-LHvkc44QWLF/view?usp=drive_link",
+            bahan: "",
+            lkm: "https://drive.google.com/file/d/1iDlHdp8Q3i_Blrq1ZWmn1vAc73SU4dTN/view?usp=drive_link",
+            hasil: "",
+            video: "https://youtu.be/hkzZyC1odTY",
+            refleksi:
+              "https://drive.google.com/file/d/143cbECMPCXex_wwtIIiCUODyh9aHhXLv/view?usp=drive_link",
           },
           teks: {},
         },
@@ -3215,19 +3255,18 @@
           title: "Siklus 4",
           topik: "",
           links: {
-            perencanaan: "",
-            materi: "",
-            media: "",
+            rpm: "",
+            media: "https://drive.google.com/file/d/19WEtvhQeuNQGFdATES-1xgcBkC-nRkvX/view?usp=drive_link",
+            bahan: "",
+            lkm: "https://drive.google.com/file/d/14g1yuIuxTyk4IXupVc-Z7AXLTPxbpRqS/view?usp=drive_link",
+            hasil: "",
             video: "",
-            instrumen: "",
-            refleksi: "",
+            refleksi:
+              "https://drive.google.com/file/d/1ZmwxifIhXcn4FQrcQiwxN39NheTWmL9v/view?usp=drive_link",
           },
           teks: {},
         },
-      ].map((c) => ({
-        ...c,
-        desc: "Perencanaan, analisis materi dan media, video praktik, instrumen penilaian, dan refleksi.",
-      }));
+      ];
 
       const nonmengajar = [
         {
@@ -3274,46 +3313,52 @@
           refleksi:
             "Melalui kegiatan ini, saya belajar mengenai pentingnya sikap disiplin, tanggung jawab, ketelitian, dan objektivitas dalam melaksanakan tugas sebagai guru. Saya juga memahami bahwa pelaksanaan evaluasi membutuhkan pengawasan yang baik untuk menjaga ketertiban dan integritas akademik.",
         },
-        {
-          id: "kegiatan-4",
-          title: "Kegiatan Nonmengajar 4: Jumat Bersih",
-          desc: "Menjaga kebersihan dan kerapian lingkungan sekolah setiap hari Jumat.",
-          deskripsi:
-            "Jumat Bersih merupakan kegiatan menjaga kebersihan dan kerapian lingkungan sekolah yang dilaksanakan pada hari Jumat. Kegiatan ini bertujuan menumbuhkan kepedulian terhadap lingkungan serta membangun kebiasaan hidup bersih dan sehat di lingkungan sekolah.",
-          peran:
-            "Saya berpartisipasi dalam kegiatan Jumat Bersih dengan ikut menjaga kebersihan dan kerapian lingkungan sekolah sesuai dengan pembagian tugas. Saya juga berupaya memberikan contoh dalam menjaga kebersihan serta mendukung terciptanya lingkungan belajar yang nyaman.",
-          hasil:
-            "Kegiatan ini mendukung terciptanya lingkungan sekolah yang lebih bersih, rapi, dan nyaman. Selain itu, kegiatan Jumat Bersih menjadi sarana untuk menumbuhkan kepedulian, kerja sama, dan tanggung jawab terhadap lingkungan sekolah.",
-          dokumentasi: "",
-          refleksi:
-            "Melalui kegiatan ini, saya belajar bahwa pendidikan karakter dapat dibangun melalui pembiasaan dan keterlibatan langsung dalam kegiatan sehari-hari. Sebagai calon guru, saya perlu memberikan keteladanan dalam menjaga kebersihan, menumbuhkan sikap gotong royong, dan membangun kesadaran bahwa lingkungan yang nyaman merupakan tanggung jawab bersama.",
-        },
       ];
       const kegDefs = [
         ["deskripsi", "Deskripsi Kegiatan", "Gambaran umum kegiatan."],
         ["peran", "Peran Mahasiswa", "Tugas dan tanggung jawab saya."],
         ["hasil", "Hasil Kegiatan", "Luaran dan capaian kegiatan."],
-        ["dokumentasi", "Dokumentasi", "Foto atau berkas pendukung."],
         ["refleksi", "Refleksi", "Pembelajaran yang saya peroleh."],
+        ["dokumentasi", "Dokumentasi", "Foto atau berkas pendukung."],
       ];
 
       // Galeri: { cap:'keterangan', url:'tautan Drive file/folder' }
       const galeri = [
         {
-          cap: "Dokumentasi 1",
-          url: "https://drive.google.com/file/d/1aIy1k3QxMdUvYI-59q0uq9vLCrJIODVC/view?usp=drive_link",
-        },
-        {
-          cap: "Dokumentasi 2",
+          cap: "Penerjunan",
           url: "https://drive.google.com/file/d/1jWOtI1iHMt4RJgVyGTK3_37YX0ygUygP/view?usp=drive_link",
         },
         {
-          cap: "Dokumentasi 3",
+          cap: "Diskusi dengan Pamong",
+          url: "https://drive.google.com/file/d/1aIy1k3QxMdUvYI-59q0uq9vLCrJIODVC/view?usp=drive_link",
+        },
+        {
+          cap: "Upacara 17 Agustus",
           url: "https://drive.google.com/file/d/13_KSkQzryPJDVq4NPRATt5305Bws3lkr/view?usp=drive_link",
         },
         {
-          cap: "Dokumentasi 4",
-          url: "https://drive.google.com/file/d/1usaHLn9zkbkL6Azwi-sqVkeIi1JDPkis/view?usp=drive_link",
+          cap: "Mood Meter",
+          url: "https://drive.google.com/file/d/14-5n7JRjFNZmYSb6eHP95lZnaQkQ2YcV/view?usp=drive_link",
+        },
+        {
+          cap: "Membimbing Murid saat Diskusi",
+          url: "https://drive.google.com/file/d/1Zp3Jto3rWqIXmlBLmU_MJYjiM8c44qkw/view?usp=drive_link",
+        },
+        {
+          cap: "Presentasi Kelompok",
+          url: "https://drive.google.com/file/d/12bpMLeGgNkTAMJ4lsgacaAlcLo_4gKjX/view?usp=drive_link",
+        },
+        {
+          cap: "Pembelajaran dengan Game",
+          url: "https://drive.google.com/file/d/1m6gKWe5edELlRQi0NKFGmmlJc0LluguK/view?usp=drive_link",
+        },
+        {
+          cap: "Foto Bersama Kelas X KA A",
+          url: "https://drive.google.com/file/d/1fluY5wBJlGWBKWB0bkEBXHNPVvr7XOe8/view?usp=drive_link",
+        },
+        {
+          cap: "Foto Bersama Kelas X KA B",
+          url: "https://drive.google.com/file/d/1r5BvRO8LjumQ5KU3Eqc_rxu_3Z8SRcJ2/view?usp=drive_link",
         },
       ];
 
@@ -3332,7 +3377,7 @@
         [
           "Sosial",
           "Komunikasi dengan murid, guru pamong, dan warga sekolah.",
-          "Selama PPL Mandiri, saya membangun komunikasi yang lebih baik dengan murid, guru pamong, dosen pembimbing, dan warga sekolah. Kegiatan seperti piket 5S, pendampingan simulasi TKA, pengawasan ujian blok, dan Jumat Bersih membuat saya lebih mengenal budaya sekolah serta belajar berkoordinasi dan bekerja sama dalam kegiatan di luar kelas.",
+          "Selama PPL Mandiri, saya membangun komunikasi yang lebih baik dengan murid, guru pamong, dosen pembimbing, dan warga sekolah. Kegiatan seperti piket 5S, pendampingan simulasi TKA, dan pengawasan ujian blok membuat saya lebih mengenal budaya sekolah serta belajar berkoordinasi dan bekerja sama dalam kegiatan di luar kelas.",
         ],
         [
           "Kepribadian",
@@ -3341,32 +3386,16 @@
         ],
       ];
       const kendala = [
-        [
-          "Perbedaan kemampuan awal murid",
-          "Kemampuan dan kesiapan belajar murid tidak seragam, sehingga satu pendekatan belum tentu cocok untuk semua. Saya menyikapinya dengan pendampingan sesuai kebutuhan, variasi kegiatan, dan refleksi setelah tiap pertemuan.",
-        ],
-        [
-          "Pengelolaan waktu dan kelas",
-          "Menyesuaikan alokasi waktu antara penjelasan, praktik, dan asesmen serta menjaga kelas tetap kondusif memerlukan penyesuaian di setiap siklus. Saya memperbaikinya dengan perencanaan alur kegiatan yang lebih rinci dan pengaturan tugas yang jelas.",
-        ],
-        [
-          "Penyusunan asesmen yang selaras",
-          "Merancang instrumen penilaian yang benar-benar mengukur tujuan pembelajaran menuntut ketelitian. Saya berdiskusi dengan guru pamong dan dosen pembimbing, lalu merevisi instrumen berdasarkan hasil refleksi.",
-        ],
+        "Perbedaan tingkat pemahaman dan keaktifan murid dalam mengikuti pembelajaran.",
+        "Beberapa murid mengalami kesulitan memahami konsep algoritma dan logika proposisi.",
+        "Pengelolaan waktu antara penyampaian materi, diskusi, presentasi, dan evaluasi belum selalu optimal.",
+        "Partisipasi murid dalam diskusi dan presentasi belum sepenuhnya merata.",
       ];
       const tindak = [
-        [
-          "Menerapkan asesmen awal secara rutin",
-          "Saya akan memulai pembelajaran dengan asesmen diagnostik untuk memetakan kemampuan dan kebutuhan murid, lalu memakai hasilnya untuk menentukan strategi, media, dan bentuk pendampingan.",
-        ],
-        [
-          "Mengembangkan media dan strategi pembelajaran",
-          "Saya akan terus mengembangkan media yang interaktif dan kontekstual, serta memperkaya variasi strategi agar pembelajaran Informatika lebih bermakna dan menyenangkan.",
-        ],
-        [
-          "Menjaga budaya refleksi dan belajar berkelanjutan",
-          "Saya akan melakukan refleksi setelah setiap pembelajaran, meminta umpan balik dari rekan sejawat dan murid, serta mengikuti pelatihan untuk meningkatkan kompetensi profesional.",
-        ],
+        "Menyusun pembelajaran yang lebih terstruktur dengan instruksi dan alokasi waktu yang jelas.",
+        "Menggunakan contoh kontekstual, media visual, dan latihan bertahap untuk memperkuat pemahaman murid.",
+        "Memberikan pendampingan dan variasi tugas sesuai kebutuhan serta kesiapan belajar murid.",
+        "Melakukan evaluasi dan refleksi secara berkala berdasarkan umpan balik Guru Pamong dan teman sejawat.",
       ];
 
       // ===================== RENDER =====================
@@ -3410,12 +3439,13 @@
           )
           .join("");
       }
-      renderGrid("grid-mengajar", mengajar, "mengajar");
       renderGrid("grid-nonmengajar", nonmengajar, "nonmengajar");
 
       // Ubah tautan Google Drive menjadi URL yang bisa disematkan (iframe)
       function drivePreview(url) {
         if (!url) return null;
+        let y = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]{11})/);
+        if (y) return "https://www.youtube.com/embed/" + y[1];
         let m = url.match(/\/file\/d\/([^\/?#]+)/);
         if (m) return "https://drive.google.com/file/d/" + m[1] + "/preview";
         m = url.match(/\/folders\/([^\/?#]+)/);
@@ -3431,28 +3461,13 @@
         let body = "";
         if (text) body += `<div class="course-about">${esc(text)}</div>`;
         if (embed)
-          body += `<div class="pdf-frame ${isFolder ? "is-folder" : ""}" style="${text ? "margin-top:14px;" : ""}"><iframe src="${embed}" title="${esc(title)} - ${esc(ctx)}" loading="lazy" allow="autoplay" referrerpolicy="no-referrer"></iframe></div>`;
+          body += `<div class="pdf-frame ${isFolder ? "is-folder" : ""}" style="${text ? "margin-top:14px;" : ""}"><iframe src="${embed}" title="${esc(title)} - ${esc(ctx)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="${/youtube\.com/.test(embed) ? "strict-origin-when-cross-origin" : "no-referrer"}"></iframe></div>`;
         if (!body)
           body = '<div class="pdf-empty">Preview belum tersedia.</div>';
         return `<div class="preview-col"><h3 class="block-title"><span class="block-dot"></span><span>${title}</span></h3><p class="block-sub">${sub}</p>${body}</div>`;
       }
 
       const detailBuilders = {
-        mengajar(c, i) {
-          const chips = mengajar
-            .map(
-              (s, j) =>
-                `<button class="chip ${j === i ? "on" : ""}" onclick="openDetail('mengajar',${j})">${s.title}</button>`,
-            )
-            .join("");
-          return `
-        <button class="detail-back" onclick="closeDetail('mengajar')">&larr; Kembali ke daftar siklus</button>
-        <h2 class="detail-title detail-kicker">Praktik Mengajar Mandiri</h2>
-        <h2 class="detail-title">${c.title}</h2>
-        ${c.topik ? `<p class="modal-desc">${esc(c.topik)}</p>` : ""}
-        <div class="chips">${chips}</div>
-        <div class="preview-grid">${itemDefs.map(([k, t, d]) => block(t, d, c.links[k], c.teks[k], c.title)).join("")}</div>`;
-        },
         nonmengajar(c) {
           return `
         <button class="detail-back" onclick="closeDetail('nonmengajar')">&larr; Kembali ke daftar kegiatan</button>
@@ -3471,6 +3486,24 @@
         },
       };
 
+      // Praktik Mengajar: tab siklus langsung tampil (tanpa kartu)
+      function renderSiklus() {
+        document.getElementById("siklus-inline").innerHTML =
+          '<div class="siklus-list">' +
+          mengajar
+            .map(
+              (c, i) => `
+        <article class="siklus-card reveal" id="${c.id}" style="--ic:${iconColors[(i * 2) % iconColors.length]}">
+          <div class="siklus-head"><span class="siklus-num">${i + 1}</span><h3 class="detail-title siklus-title">${c.title}</h3></div>
+          ${c.topik ? `<p class="modal-desc">${esc(c.topik)}</p>` : ""}
+          <div class="preview-grid">${itemDefs.map(([k, t, d]) => block(t, d, c.links[k], c.teks[k], c.title)).join("")}</div>
+        </article>`,
+            )
+            .join("") +
+          "</div>";
+      }
+      renderSiklus();
+
       // Galeri
       document.getElementById("galeri").innerHTML = galeri
         .map((g) => {
@@ -3487,14 +3520,14 @@
       (function () {
         const card = (n, t, sub, body) => `
       <article class="refleksi-card reveal"><div class="refleksi-num">${n}</div>
-        <div class="refleksi-body"><h3>${esc(t)}</h3>${sub ? `<p class="rtl-lead">${esc(sub)}</p>` : ""}<p>${note(body)}</p></div></article>`;
+        <div class="refleksi-body">${t ? `<h3>${esc(t)}</h3>` : ""}${sub ? `<p class="rtl-lead">${esc(sub)}</p>` : ""}<p>${note(body)}</p></div></article>`;
         const list = (arr, label) =>
           arr.length
-            ? arr.map((x, i) => card(i + 1, x[0], "", x[1])).join("")
+            ? arr.map((x, i) => card(i + 1, "", "", x)).join("")
             : card(1, label, "", "");
         document.getElementById("refl-root").innerHTML = `
       <h3 class="refleksi-group-title reveal">Evaluasi Perkembangan Kompetensi</h3>
-      ${kompetensi.map((k, i) => card(i + 1, k[0], k[1], k[2])).join("")}
+      ${kompetensi.map((k, i) => card(i + 1, k[1], "", k[2])).join("")}
       <h3 class="refleksi-group-title reveal">Kendala</h3>
       ${list(kendala, "Kendala selama PPL Mandiri")}
       <h3 class="refleksi-group-title reveal">Tindak Lanjut</h3>
@@ -3502,7 +3535,7 @@
       })();
 
       // ---------- detail (terbuka langsung di halaman) ----------
-      const courseLists = { mengajar, nonmengajar };
+      const courseLists = { nonmengajar };
       function openDetail(key, idx, push = true, behavior = "smooth") {
         const sec = document.getElementById(key);
         const c = courseLists[key][idx];
@@ -3600,6 +3633,14 @@
         const id = ID_BY_ROUTE[r] || "beranda";
         const sec = document.getElementById(id);
         lockSpyFor(900);
+        if (id === "mengajar" && course) {
+          const el = document.getElementById(course);
+          if (el) {
+            el.scrollIntoView({ behavior, block: "start" });
+            setActiveNav(id);
+            return;
+          }
+        }
         if (courseLists[id]) {
           const idx = course
             ? courseLists[id].findIndex((c) => c.id === course)
