@@ -2793,6 +2793,33 @@
       .cmp th {
         min-width: 140px;
       }
+
+      /* ===== SIKLUS: 3 kartu per baris ===== */
+      .siklus-card .preview-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(12px, 1.8vw, 20px);
+      }
+      .siklus-card .preview-col {
+        padding: 14px;
+      }
+      .siklus-card .preview-col .pdf-frame,
+      .siklus-card .preview-col .pdf-frame.is-folder {
+        height: clamp(240px, 26vw, 330px);
+      }
+      @media (max-width: 1000px) and (min-width: 701px) {
+        .siklus-card .preview-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 700px) {
+        .siklus-card .preview-grid {
+          grid-template-columns: 1fr;
+        }
+        .siklus-card .preview-col .pdf-frame,
+        .siklus-card .preview-col .pdf-frame.is-folder {
+          height: 360px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -3207,11 +3234,11 @@
           title: "Siklus 1",
           topik: "",
           links: {
-            rpm: "",
-            media: "https://drive.google.com/file/d/1WRYJKZBfijLSsHYlatge0qxz2HvEONj_/view?usp=drive_link",
-            bahan: "",
+            rpm: "https://drive.google.com/file/d/1Lm2vgIJYtnYaqC-mgpRG0dMasSP4Vqta/view?usp=drive_link",
+            media: "https://drive.google.com/file/d/1Gw3N82iDCj8JSbSjdDxk2aENpu860Xbk/view?usp=drive_link",
+            bahan: "https://drive.google.com/file/d/166EA9eAMk62QL12FE_BLg5fWfsuzVQck/view?usp=drive_link",
             lkm: "https://drive.google.com/file/d/1HfEdOtFaUbMkXSlSQ8xlJ3XfDobCo1xE/view?usp=drive_link",
-            hasil: "",
+            hasil: "https://drive.google.com/file/d/1WZXHnQXj78lfFjLpSs-P5LdxOugXNMom/view?usp=drive_link",
             video: "https://youtu.be/H9wZeKcUGEI",
             refleksi:
               "https://drive.google.com/file/d/1fU85yiMvwVL-yxvwE2-CrBGwH7xWfJj5/view?usp=drive_link",
@@ -3223,11 +3250,11 @@
           title: "Siklus 2",
           topik: "",
           links: {
-            rpm: "",
-            media: "https://drive.google.com/file/d/1dG_LVRdGRgMBm9Y14qXpKbLlif-poj-_/view?usp=drive_link",
-            bahan: "",
+            rpm: "https://drive.google.com/file/d/1slffORaYteIb2CyzSPRUAJYUr08dEcKN/view?usp=drive_link",
+            media: "https://drive.google.com/file/d/186XLOryRFExxxSKznFyxbHY09jnfEG36/view?usp=drive_link",
+            bahan: "https://drive.google.com/file/d/1K-YQeou6pEln5PMf-8YBL5xYK7r8MTVw/view?usp=drive_link",
             lkm: "https://drive.google.com/file/d/1rm5HAR9Et-pR9_syyFjFlC51c23dpiIr/view?usp=drive_link",
-            hasil: "",
+            hasil: null,
             video: "https://youtu.be/UtkfOPKW95s",
             refleksi:
               "https://drive.google.com/file/d/1g1oTxaKxZkWQo518Ae0IESxJ4WcU0hHB/view?usp=drive_link",
@@ -3239,11 +3266,11 @@
           title: "Siklus 3",
           topik: "",
           links: {
-            rpm: "",
-            media: "https://drive.google.com/file/d/1N81U_WfDY5y0ZT1Bx4Wq-LHvkc44QWLF/view?usp=drive_link",
-            bahan: "",
+            rpm: "https://drive.google.com/file/d/1slffORaYteIb2CyzSPRUAJYUr08dEcKN/view?usp=drive_link",
+            media: "https://drive.google.com/file/d/18f0rbzc-uY-ZpZeIoACDMeVH7o3rU95t/view?usp=drive_link",
+            bahan: "https://drive.google.com/file/d/1fCUM9daw7tZAxUvDUr4HJEMwWVktvtOQ/view?usp=drive_link",
             lkm: "https://drive.google.com/file/d/1iDlHdp8Q3i_Blrq1ZWmn1vAc73SU4dTN/view?usp=drive_link",
-            hasil: "",
+            hasil: null,
             video: "https://youtu.be/hkzZyC1odTY",
             refleksi:
               "https://drive.google.com/file/d/143cbECMPCXex_wwtIIiCUODyh9aHhXLv/view?usp=drive_link",
@@ -3255,12 +3282,12 @@
           title: "Siklus 4",
           topik: "",
           links: {
-            rpm: "",
-            media: "https://drive.google.com/file/d/19WEtvhQeuNQGFdATES-1xgcBkC-nRkvX/view?usp=drive_link",
-            bahan: "",
+            rpm: "https://drive.google.com/file/d/1Lm2vgIJYtnYaqC-mgpRG0dMasSP4Vqta/view?usp=drive_link",
+            media: "https://drive.google.com/file/d/1y1xCiXeeVmCPjY2P9Gj7kPpP0pIrTiuG/view?usp=drive_link",
+            bahan: "https://drive.google.com/file/d/166EA9eAMk62QL12FE_BLg5fWfsuzVQck/view?usp=drive_link",
             lkm: "https://drive.google.com/file/d/14g1yuIuxTyk4IXupVc-Z7AXLTPxbpRqS/view?usp=drive_link",
-            hasil: "",
-            video: "",
+            hasil: "https://drive.google.com/file/d/1JepP7W8XRf-4Z2AnD-OqpDw3yLBCYVcN/view?usp=drive_link",
+            video: "https://youtu.be/8Mavffd4Nyc",
             refleksi:
               "https://drive.google.com/file/d/1ZmwxifIhXcn4FQrcQiwxN39NheTWmL9v/view?usp=drive_link",
           },
@@ -3496,7 +3523,7 @@
         <article class="siklus-card reveal" id="${c.id}" style="--ic:${iconColors[(i * 2) % iconColors.length]}">
           <div class="siklus-head"><span class="siklus-num">${i + 1}</span><h3 class="detail-title siklus-title">${c.title}</h3></div>
           ${c.topik ? `<p class="modal-desc">${esc(c.topik)}</p>` : ""}
-          <div class="preview-grid">${itemDefs.map(([k, t, d]) => block(t, d, c.links[k], c.teks[k], c.title)).join("")}</div>
+          <div class="preview-grid">${itemDefs.filter(([k]) => c.links[k] !== null).map(([k, t, d]) => block(t, d, c.links[k], c.teks[k], c.title)).join("")}</div>
         </article>`,
             )
             .join("") +
